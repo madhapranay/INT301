@@ -56,4 +56,29 @@ Repeat the process for other packets with different TTL values to identify more 
 
 By following these steps, you can use the TTL field in the IP header to identify TCP sessions in Wireshark.
 <img src="sessions.png" alt="Finding Session" >
+___
+<h3>Finding Open Ports</h3>
+Here are the steps to find the open ports in Wireshark using the "Statistics" menu:
 
+Open Wireshark and load the captured network traffic file.
+
+Go to the "Statistics" menu and select "Conversations."
+
+In the "Conversations" window, select the "TCP" tab.
+
+In the TCP tab, you will see a list of all the TCP conversations that took place during the captured network traffic.
+
+Click on the "Service" column to sort the list based on the services used during these conversations.
+
+Look for the services that are using a high number of ports. These are the services that are likely to have multiple open ports.
+
+Select the service you want to investigate and click on the "Follow" button to view the details of the selected conversation.
+
+In the "Follow TCP Stream" window, you will see the details of the conversation, including the ports that were used.
+
+Note down the ports that were used for the selected service, as these are the open ports for that service.
+
+Repeat the above steps for each service you want to investigate.
+
+That's it! By following these steps, you can easily find the open ports in Wireshark by going to "Statistics" -> "Conversations" -> "TCP list".
+<img src="Screenshot (14).png" alt="Open Ports" >
