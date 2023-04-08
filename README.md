@@ -15,6 +15,8 @@ To detect sessions, I will be using Wireshark to capture and analyze the various
 To detect open ports, I will be using Wireshark to capture and analyze the various network packets to identify the ports that are being used by various devices on the network. This will involve analyzing the various network protocols such as TCP, UDP, and ICMP to identify the ports that are being used by different services and applications.
 
 Overall, the project will involve using Wireshark to capture and analyze network traffic in real-time and gain valuable insights into the devices, protocols, and services being used on the network. By implementing this network miner tool, we will be able to detect the operating system, sessions, and open ports through packet sniffing and investigate the network traffic.</h3>
+<img src="1.png" alt="WireShark Installation" width="500" height="600">
+
 ___
 <h3>Finding the operating system</h3>
 <p>To find the operating system using the Time to Live (TTL) in Wireshark, you can follow these step-by-step procedures:
