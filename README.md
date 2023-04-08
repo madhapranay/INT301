@@ -34,4 +34,22 @@ Repeat for other packets: Repeat this process for other packets to get a better 
 
 By following these steps, you can use Wireshark to determine the operating system being used on a network by analyzing the TTL values of the captured packets.</p>
 <img src="Screenshot (8).png" alt="Finding Operating System Using Time To Live" >
+___
+<h3>Finding TCP Session</h3>
+The Time to Live (TTL) field in the IP header can be used to identify TCP sessions in Wireshark. Here's a step-by-step procedure to find TCP sessions using TTL:
 
+Open Wireshark and load the capture file containing the network traffic you want to analyze.
+
+Filter the traffic to display only TCP packets. You can do this by typing "tcp" in the filter box.
+
+Look for packets with different TTL values. The TTL field in the IP header specifies the maximum number of hops a packet can take before being discarded. Each operating system sets a default TTL value for outgoing packets, which can be used to identify the operating system.
+
+Select a packet with a TTL value that is different from the others. Right-click on the packet and select "Follow > TCP stream" from the context menu.
+
+The TCP stream window will show the packets that belong to the selected session. The source and destination IP addresses and port numbers will be displayed at the top of the window.
+
+To view the data sent and received during the session, click on the "ASCII" or "Hex dump" buttons at the bottom of the window.
+
+Repeat the process for other packets with different TTL values to identify more TCP sessions.
+
+By following these steps, you can use the TTL field in the IP header to identify TCP sessions in Wireshark.
